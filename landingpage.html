@@ -7,8 +7,8 @@
     <style>
         /* Global Styles */
         :root {
-            --primary: #2E86AB;
-            --secondary: #F18F01;
+            --primary: #0d3f83;  /* Updated primary color */
+            --secondary: #ffc038;  /* Updated secondary color */
             --dark: #333;
             --light: #f8f9fa;
             --success: #28a745;
@@ -89,13 +89,13 @@
         }
         
         .cta-button:hover {
-            background-color: #246a88;
+            background-color: #0a336d;
             color: white;
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(46, 134, 171, 0.8), rgba(46, 134, 171, 0.9)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');
+            background: linear-gradient(rgba(13, 63, 131, 0.9), rgba(13, 63, 131, 0.95)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');
             background-size: cover;
             background-position: center;
             color: white;
@@ -212,6 +212,7 @@
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--secondary);
         }
         
         .card:hover {
@@ -298,6 +299,7 @@
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary);
         }
         
         .testimonial-text {
@@ -347,7 +349,7 @@
         /* CTA Section */
         .cta {
             padding: 100px 0;
-            background: linear-gradient(rgba(46, 134, 171, 0.9), rgba(46, 134, 171, 0.9)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85');
+            background: linear-gradient(rgba(13, 63, 131, 0.9), rgba(13, 63, 131, 0.95)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85');
             background-size: cover;
             background-position: center;
             color: white;
@@ -367,7 +369,7 @@
         
         /* Footer */
         footer {
-            background-color: var(--dark);
+            background-color: var(--primary);
             color: white;
             padding: 60px 0 20px;
         }
@@ -409,15 +411,15 @@
         }
         
         .social-links a {
-            color: white;
+            color: var(--secondary);
             font-size: 20px;
         }
         
         .copyright {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #aaa;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
             font-size: 14px;
         }
         
@@ -466,7 +468,7 @@
             <nav>
                 <div class="logo">Refu<span>Link</span></div>
                 <ul class="nav-links">
-                    <li><a href="#problem">The Problem</a></li>
+                    <li><a href="#problem">The Challenge</a></li>
                     <li><a href="#solution">Our Solution</a></li>
                     <li><a href="#how-it-works">How It Works</a></li>
                     <li><a href="#testimonials">Success Stories</a></li>
@@ -479,11 +481,11 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Connecting Skilled Refugees with Meaningful Employment</h1>
-            <p>RefuLink bridges the gap between talented refugees and employers in Rwanda, creating opportunities for dignified work and economic integration.</p>
+            <h1>Bridging the Gap Between Skilled Refugees and Employers in Rwanda</h1>
+            <p>RefuLink is a specialized platform that facilitates economic integration by connecting qualified refugees with meaningful employment opportunities in Rwanda's growing economy.</p>
             <div class="hero-buttons">
-                <a href="#" class="cta-button">I'm an Employer</a>
-                <a href="#" class="secondary-button">I'm a Job Seeker</a>
+                <a href="#" class="cta-button">Employers: Find Talent</a>
+                <a href="#" class="secondary-button">Refugees: Join Our Network</a>
             </div>
         </div>
     </section>
@@ -492,23 +494,23 @@
     <section class="problem" id="problem">
         <div class="container">
             <div class="section-title">
-                <h2>The Challenge Refugees Face</h2>
-                <p>Despite their skills and qualifications, refugees in Rwanda often struggle to find employment due to systemic barriers.</p>
+                <h2>The Employment Integration Challenge</h2>
+                <p>Despite progressive policies in Rwanda, refugees face significant barriers to meaningful employment that match their skills and qualifications.</p>
             </div>
             <div class="problem-content">
                 <div class="problem-text">
-                    <h3>Barriers to Employment</h3>
+                    <h3>Systemic Barriers to Workforce Integration</h3>
                     <ul>
-                        <li>Language differences (Kinyarwanda, English, French)</li>
-                        <li>Lack of local professional networks</li>
-                        <li>Difficulty verifying foreign credentials</li>
-                        <li>Limited awareness among employers about refugee talents</li>
-                        <li>Cultural differences in workplace expectations</li>
+                        <li>Language proficiency requirements (Kinyarwanda, English, French)</li>
+                        <li>Limited access to local professional networks and job markets</li>
+                        <li>Challenges in verifying foreign credentials and work experience</li>
+                        <li>Employer unfamiliarity with refugee skills and potential</li>
+                        <li>Cultural differences in workplace expectations and practices</li>
                     </ul>
-                    <p>These challenges lead to underemployment and wasted potential, despite Rwanda's progressive policies allowing refugees to work.</p>
+                    <p>These systemic challenges result in significant underemployment among refugee populations, despite Rwanda's supportive legal framework that permits refugee employment.</p>
                 </div>
                 <div class="problem-image">
-                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca" alt="Refugees looking for work">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca" alt="Refugees seeking employment opportunities">
                 </div>
             </div>
         </div>
@@ -518,24 +520,24 @@
     <section class="solution" id="solution">
         <div class="container">
             <div class="section-title">
-                <h2>Our Innovative Solution</h2>
-                <p>RefuLink addresses these challenges through a comprehensive platform that connects, verifies, and matches talent with opportunity.</p>
+                <h2>Our Comprehensive Solution</h2>
+                <p>RefuLink addresses these challenges through a multi-faceted approach that benefits both refugees and employers.</p>
             </div>
             <div class="solution-cards">
                 <div class="card">
-                    <div class="card-icon">👥</div>
-                    <h3>Talent Verification</h3>
-                    <p>We thoroughly vet refugee skills, qualifications, and work experience to build trusted profiles for employers.</p>
+                    <div class="card-icon">📋</div>
+                    <h3>Credential Verification</h3>
+                    <p>Our rigorous verification process assesses refugee qualifications, work experience, and skills to create trusted professional profiles.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon">🤝</div>
-                    <h3>Employer Partnerships</h3>
-                    <p>We work with businesses across Rwanda to create job opportunities tailored to refugee talents.</p>
+                    <div class="card-icon">🏢</div>
+                    <h3>Employer Engagement</h3>
+                    <p>We partner with businesses across Rwanda to develop employment opportunities that align with refugee skills and experience.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon">📚</div>
-                    <h3>Training & Preparation</h3>
-                    <p>We provide language courses, cultural orientation, and job readiness training to ensure success.</p>
+                    <div class="card-icon">🎓</div>
+                    <h3>Professional Development</h3>
+                    <p>We offer language training, cultural orientation, and professional skills development to prepare refugees for workplace success.</p>
                 </div>
             </div>
         </div>
@@ -545,91 +547,91 @@
     <section class="how-it-works" id="how-it-works">
         <div class="container">
             <div class="section-title">
-                <h2>How RefuLink Works</h2>
-                <p>Our simple three-step process creates meaningful connections between refugees and employers.</p>
+                <h2>Our Three-Step Process</h2>
+                <p>RefuLink's systematic approach ensures successful employment matches between refugees and employers.</p>
             </div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Profile Creation</h3>
-                    <p>Refugees create detailed profiles with skills, experience, and qualifications. Our team verifies all information.</p>
+                    <h3>Comprehensive Profile Development</h3>
+                    <p>Refugees complete detailed professional profiles documenting their skills, qualifications, and work history, which our team thoroughly verifies.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Smart Matching</h3>
-                    <p>Our algorithm matches refugee profiles with suitable job openings based on skills, experience, and location.</p>
+                    <h3>Intelligent Matching System</h3>
+                    <p>Our proprietary algorithm matches verified refugee profiles with appropriate job opportunities based on skills, experience, and geographic preferences.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Job Placement</h3>
-                    <p>Employers connect with candidates, conduct interviews, and make hiring decisions with our support.</p>
+                    <h3>Facilitated Employment Placement</h3>
+                    <p>We support both employers and candidates through the interview and hiring process, ensuring successful employment outcomes.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-<!--     <section class="testimonials" id="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
                 <h2>Success Stories</h2>
-                <p>Hear from refugees and employers who have benefited from RefuLink.</p>
+                <p>Hear from refugees and employers who have transformed their futures through RefuLink.</p>
             </div>
             <div class="testimonial-cards">
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        <p>After fleeing the DRC, I struggled to find work despite my engineering degree. RefuLink helped me get my credentials recognized and connected me with a construction company in Kigali. Now I can support my family with dignity.</p>
+                        <p>After fleeing conflict in Burundi with my accounting qualifications, I struggled for years to find professional work. RefuLink helped validate my credentials and connected me with a Kigali-based financial services firm where I now work as a bookkeeper.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Jean">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial author">
                         </div>
                         <div class="author-info">
-                            <h4>Jean M.</h4>
-                            <p>Civil Engineer, Kigali</p>
+                            <h4>Eric N.</h4>
+                            <p>Accounting Professional, Kigali</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        <p>We hired three refugees through RefuLink for our textile factory. The vetting process gave us confidence in their skills, and they've become some of our most dedicated employees. We'll definitely hire more through the platform.</p>
+                        <p>As a hotel manager in Musanze, we've hired five refugees through RefuLink for various positions. The platform's verification system gave us confidence in their skills, and they've brought valuable diversity and dedication to our team.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amina">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimonial author">
                         </div>
                         <div class="author-info">
-                            <h4>Amina R.</h4>
-                            <p>Factory Manager, Huye</p>
+                            <h4>Clarisse U.</h4>
+                            <p>Hospitality Manager, Musanze</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        <p>The training program helped me improve my Kinyarwanda and understand Rwandan workplace culture. Within two months of completing the course, I got a job as a hotel receptionist through RefuLink.</p>
+                        <p>The cultural orientation and Kinyarwanda language training provided by RefuLink were invaluable. Within three months of completing the program, I secured an administrative position at a healthcare facility in Huye.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophie">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimonial author">
                         </div>
                         <div class="author-info">
-                            <h4>Sophie K.</h4>
-                            <p>Hotel Receptionist, Musanze</p>
+                            <h4>Grace M.</h4>
+                            <p>Administrative Assistant, Huye</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Make an Impact?</h2>
-            <p>Whether you're an employer looking for skilled workers or a refugee seeking meaningful employment, RefuLink can help.</p>
+            <h2>Join Rwanda's Economic Integration Movement</h2>
+            <p>Whether you're an employer seeking skilled talent or a refugee professional looking for meaningful employment, RefuLink provides the platform for mutual success.</p>
             <div class="hero-buttons">
-                <a href="#" class="cta-button">Employers: Post a Job</a>
-                <a href="#" class="secondary-button">Refugees: Join Now</a>
+                <a href="#" class="cta-button">Employers: Access Talent</a>
+                <a href="#" class="secondary-button">Refugees: Register Now</a>
             </div>
         </div>
     </section>
@@ -640,7 +642,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>RefuLink</h3>
-                    <p>Connecting skilled refugees with employment opportunities in Rwanda.</p>
+                    <p>Facilitating economic integration through employment opportunities in Rwanda.</p>
                     <div class="social-links">
                         <a href="#">FB</a>
                         <a href="#">TW</a>
@@ -651,32 +653,33 @@
                 <div class="footer-column">
                     <h3>For Refugees</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Create Profile</a></li>
+                        <li><a href="#">Create Professional Profile</a></li>
                         <li><a href="#">Training Programs</a></li>
-                        <li><a href="#">Job Listings</a></li>
-                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Job Opportunities</a></li>
+                        <li><a href="#">Resource Center</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>For Employers</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Post Jobs</a></li>
-                        <li><a href="#">Browse Talent</a></li>
-                        <li><a href="#">Hiring Process</a></li>
-                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Post Job Openings</a></li>
+                        <li><a href="#">Browse Verified Talent</a></li>
+                        <li><a href="#">Hiring Support</a></li>
+                        <li><a href="#">Partnership Opportunities</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
+                    <h3>Contact Our Team</h3>
                     <ul class="footer-links">
-                        <li><a href="#">info@refulink.rw</a></li>
-                        <li><a href="#">+250 78 123 4567</a></li>
-                        <li><a href="#">Kigali, Rwanda</a></li>
+                        <li><a href="mailto:info@refulink.rw">info@refulink.rw</a></li>
+                        <li><a href="tel:+250781234567">+250 78 123 4567</a></li>
+                        <li>KG 123 Street, Kigali</li>
+                        <li>Rwanda</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 RefuLink. All rights reserved.</p>
+                <p>&copy; 2024 RefuLink Rwanda. All rights reserved.</p>
             </div>
         </div>
     </footer>
